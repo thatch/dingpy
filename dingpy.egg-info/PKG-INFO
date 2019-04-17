@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dingpy
+Version: 0.0.1
+Summary: Plays alarm when long script finishes
+Home-page: https://github.com/Tina-Bu/dingpy/
+Author: Tina Bu
+Author-email: tina.hongbu@gmail.com
+License: UNKNOWN
+Description: # ding
+        
+        A Python package that plays an audio alert when your program finishes.
+        
+        Test audio downloaded from: http://soundbible.com/2185-Old-School-Bell.html
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
