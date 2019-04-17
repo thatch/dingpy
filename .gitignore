@@ -1,10 +1,21 @@
 # python package distribution files
-dist/*
+dist/
+develop-eggs/
+*.egg-info/
+eggs/
+.eggs/
+sdist/
+MANIFEST
 
-# 
-dingpy.egg-info/*
 
 # build files
-build/*
+build/
+
+# jupyter notebook
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints
+
 
 
