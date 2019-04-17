@@ -1,4 +1,12 @@
-from ding import Alarm
+from .Alarm import Alarm
+import os
 
-alarm = Alarm()
-alarm.ring_alarm()
+def main():
+    # alarm_config = Alarm.load_config()
+    # alarm = Alarm(alarm_config)
+    alarm = Alarm(path=os.path.dirname(__file__))
+    alarm.ring()
+
+if __name__ == "__main__":
+    main()
+

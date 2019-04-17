@@ -1,16 +1,29 @@
 Metadata-Version: 2.1
 Name: dingpy
-Version: 0.0.1
-Summary: Plays alarm when long script finishes
+Version: 0.0.13
+Summary: Included audio file to package with MANIFEST.io
 Home-page: https://github.com/Tina-Bu/dingpy/
 Author: Tina Bu
 Author-email: tina.hongbu@gmail.com
 License: UNKNOWN
-Description: # ding
+Description: # DingPy
         
         A Python package that plays an audio alert when your program finishes.
         
         Test audio downloaded from: http://soundbible.com/2185-Old-School-Bell.html
+        
+        ## Build a Package
+        
+        1. Delete the `build`, `dist`, and `<package name>.egg-info` folders in your root directory.
+        2. Change version number in your `setup.py` file.
+        3. Create distribution again. e.g: `python setup.py sdist bdist_wheel`
+        4. Upload distribution again. e.g: `twine upload dist/*`
+        
+        ## Similar Open Source Tools
+        
+        https://github.com/Shahor/dingdingdong
+        
+        https://github.com/xxv/ding/
         
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3

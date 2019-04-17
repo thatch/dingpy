@@ -1,0 +1,6 @@
+
+recursive-include dingpy *.py
+include dingpy/alarm_audio/*
+include LICENSE
+include README.md
+include setup.py
