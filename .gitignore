@@ -1,0 +1,10 @@
+# python package distribution files
+dist/*
+
+# 
+dingpy.egg-info/*
+
+# build files
+build/*
+
+
