@@ -1,17 +1,46 @@
 # DingPy
 
-A Python package that plays an audio alert when your program finishes.
+Author: Tina Bu (http://medium.com/@tinabu/)
+
+**DingPy** is a Python package that plays an audio alert when your program finishes. It is particularly useful for long running batch jobs or impatient developers.
+
+- GitHub repo: https://github.com/Tina-Bu/dingpy
+- Documentation:
+- PyPI: https://pypi.org/project/dingpy/
+- Medium post: 
 
 Test audio downloaded from: http://soundbible.com/2185-Old-School-Bell.html
 
-## Build a Package
+**Contents**
 
-1. Delete the `build`, `dist`, and `<package name>.egg-info` folders in your root directory.
-2. Change version number in your `setup.py` file.
-3. Create distribution again. e.g: `python setup.py sdist bdist_wheel`
-4. Upload distribution again. e.g: `twine upload dist/*`
+- `Examples`_
+- `Installation`_
+- `Dependencies`_
+- `References`_
+- `Reporting Bugs`_
+- `Inspirations`_
 
-## Similar Open Source Tools
+## Examples
+```
+import dingpy
+
+# some code block
+
+dingpy.main()
+```
+
+## Installation
+
+Tested on Python 3. **DingPy** can be installed using the following command.
+
+```
+pip install dingpy
+```
+## Dependencies
+
+**DingPy**'s Python dependencies are listed in its requirements.txt file. 
+
+## Inspirations
 
 https://github.com/Shahor/dingdingdong
 

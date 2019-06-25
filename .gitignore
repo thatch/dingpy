@@ -1,7 +1,7 @@
 # python package distribution files
-dist/
-develop-eggs/
-*.egg-info/
+dist/*
+develop-eggs/*
+*.egg-info/*
 eggs/
 .eggs/
 sdist/
@@ -9,7 +9,7 @@ MANIFEST
 
 
 # build files
-build/
+build/*
 
 # jupyter notebook
 __pycache__/
