@@ -13,15 +13,14 @@ Test audio downloaded from: http://soundbible.com/2185-Old-School-Bell.html
 
 **Contents**
 
-- `Examples`_
-- `Installation`_
-- `TODO`_
-- `Dependencies`_
-- `References`_
-- `Reporting Bugs`_
-- `Inspirations`_
+1. [Examples](#example)
+2. [Installation](#installation)
+3. [TODO](#todo)
+4. [Dependencies](#dependencies)
+5. [Inspirations](#inspirations)
+6. [History](#history)
 
-## Examples
+## Examples <a name="example"></a>
 ```
 import dingpy
 
@@ -30,7 +29,7 @@ import dingpy
 dingpy.main()
 ```
 
-## Installation
+## Installation <a name="installation"></a>
 
 Tested on Python 3. **DingPy** can be installed using the following command.
 
@@ -38,15 +37,30 @@ Tested on Python 3. **DingPy** can be installed using the following command.
 pip install dingpy
 ```
 
-## TODO
+## TODO <a name="todo"></a>
 - package alarm_audio file into package build
 
-## Dependencies
+## Dependencies <a name="dependencies"></a>
 
 **DingPy**'s Python dependencies are listed in its requirements.txt file. 
 
-## Inspirations
+## Inspirations <a name="inspirations"></a>
 
 https://github.com/Shahor/dingdingdong
 
 https://github.com/xxv/ding/
+
+## History <a name="history"></a>
+
+### 0.1.0 (2019-06-25)
+Audio files packaged.
+
+### 0.0.14 (2019-06-24)
+Hold off Anaconda package development.
+
+### 0.0.13 (2019-04-16)
+Package tested from terminal. Audio file to be packaged in.
+
+### 0.0.1 (2019-04-13)
+First release on PyPI.
+
