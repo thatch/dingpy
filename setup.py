@@ -5,25 +5,33 @@
 
 # import setuptools
 from distutils.core import setup
+from setuptools import find_packages
+import io
+import os, platform
+from os import path as op
 
-with open('README.md', mode = 'r') as readme_file:
-    readme = readme_file.read().decode('utf-8')
+with open('README.md', 'r') as readme_file:
+    readme = readme_file.read()
+
+with open('HISTORY.md', 'r') as history_file:
+    history = history_file.read()
+
+here = op.abspath(op.dirname(__file__))
 
 # get the dependencies and installs
 with io.open(op.join(here, 'requirements.txt'), encoding='utf-8') as f:
     all_reqs = f.read().split('\n')
 
 install_requires = [x.strip() for x in all_reqs if 'git+' not in x]
-if platform.system() != "Windows":
-    install_requires.append('pygdal==' + PYGDAL_VERSION)
+
 dependency_links = [x.strip().replace('git+', '') for x in all_reqs if 'git+' not in x]
 
 setup(
     name="dingpy",
-    version="0.0.13",
+    version="0.0.15",
     author="Tina Bu",
     author_email="tina.hongbu@gmail.com",
-    description="plays ding sounds",
+    description="changed function from main to ding",
     long_description=readme + '\n\n' + history,
     long_description_content_type="text/markdown",
     url="https://github.com/Tina-Bu/dingpy/",
@@ -42,11 +50,8 @@ setup(
     license="MIT license",
     include_package_data=True,
     keywords='dingpy',
-    name='dingpy',
     packages=find_packages(include=['dingpy']),
-    setup_requires=setup_requirements,
-    url='https://github.com/Tina-Bu/dingpy',
-    zip_safe=False,
+    zip_safe=False
 )
 
 
