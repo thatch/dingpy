@@ -8,6 +8,7 @@ class Alarm:
         '''
         Constructor
         '''
+        # set directory of audio file
         if alarm_config and alarm_config['alarm_audio_path']:
              self.alarm_audio_path = alarm_config['alarm_audio_path']
         else:
@@ -27,3 +28,15 @@ class Alarm:
         print(self.alarm_audio_path)
         alarm = AudioSegment.from_wav(self.alarm_audio_path)
         play(alarm)
+
+def main():
+    # alarm_config = Alarm.load_config()
+    # alarm = Alarm(alarm_config)
+    # get the dirname of the absolute path
+    path = os.path.dirname(os.path.abspath(__file__))
+    alarm = Alarm(path)
+    alarm.ring()
+
+if __name__ == "__main__":
+    main()
+
