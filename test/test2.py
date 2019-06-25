@@ -1,2 +1,3 @@
 import dingpy
 
+dingpy.main()
